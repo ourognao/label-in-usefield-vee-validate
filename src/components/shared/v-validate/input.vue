@@ -91,7 +91,7 @@ export default {
       {
         initialValue: this.initialValue,
         keepValueOnUnmount: this.keepValueOnUnmount,
-        // label: this.localize ? this.localize : null
+        label: this.localize ? this.localize : null
       }
     )
 

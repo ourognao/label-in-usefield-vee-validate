@@ -16,7 +16,7 @@ div(class="row justify-center").q-mb-md.q-mt-lg
               vee-validate-input(
                 :label="$t('mixin.form.email')"
                 localize="mixinEmail"
-                name="mixinEmail"
+                name="email"
                 rules="required"
                 type="email"
               )
