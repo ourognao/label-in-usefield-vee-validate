@@ -9,16 +9,21 @@
     "lint": "eslint --ext .js,.vue ./",
     "format": "prettier --write \"**/*.{js,vue,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0",
-    "dev": "quasar dev",
+    "dev": "quasar dev -m ssr",
     "build": "quasar build"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "@vee-validate/i18n": "^4.9.0",
+    "@vee-validate/rules": "^4.9.0",
+    "vee-validate": "^4.9.0",
     "quasar": "^2.6.0",
     "vue": "^3.0.0",
+    "vue-i18n": "^9.2.2",
     "vue-router": "^4.0.0"
   },
   "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^6.0.3",
     "eslint": "^8.10.0",
     "eslint-plugin-vue": "^9.0.0",
     "eslint-config-prettier": "^8.1.0",
