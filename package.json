@@ -28,6 +28,8 @@
     "eslint-plugin-vue": "^9.0.0",
     "eslint-config-prettier": "^8.1.0",
     "prettier": "^2.5.1",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
     "@quasar/app-vite": "^1.0.0",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.14"

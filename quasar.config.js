@@ -9,7 +9,7 @@ module.exports = configure(function (ctx) {
       warnings: true,
       errors: true
     },
-    boot: ['i18n', 'v-validate'],
+    boot: ['components/shared', 'i18n', 'v-validate'],
     css: [
       'app.sass'
     ],
