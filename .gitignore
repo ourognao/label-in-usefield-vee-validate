@@ -1,6 +1,3 @@
-#https for development
-ssl
-
 .DS_Store
 .thumbs.db
 node_modules

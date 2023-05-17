@@ -58,14 +58,7 @@ export const create = ssrCreate((/* { ... } */) => {
 export const listen = ssrListen(async ({ app, port, isReady }) => {
   await isReady()
 
-  const server = process.env.NODE_ENV === 'development'
-    ? https.createServer({
-        key: fs.readFileSync('./ssl/private-key.pem'),
-        cert: fs.readFileSync('./ssl/certificate.pem')
-      }, app)
-    : app
-
-  return server.listen(port, () => {
+  return app.listen(port, () => {
     if (process.env.PROD) {
       console.info('Server listening at port ' + port)
     }

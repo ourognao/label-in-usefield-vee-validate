@@ -39,10 +39,6 @@ module.exports = configure(function (ctx) {
     },
     devServer: ctx.dev
       ? {
-        https: {
-          key: fs.readFileSync('./ssl/private-key.pem'),
-          cert: fs.readFileSync('./ssl/certificate.pem')
-        },
         port: ctx.mode.spa ? 9100 : (ctx.mode.pwa ? 8090 : 8080),
         open: true
       }
